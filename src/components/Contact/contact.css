@@ -53,13 +53,6 @@
     font-size: 1rem;
     transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
 }
-
-/* Special accent for the primary Email action */
-.contact-link-item.email-btn {
-    border-color: var(--primary);
-    position: relative;
-}
-
 /* SVG Icon alignment and coloring */
 .contact-link-item svg {
     width: 20px;

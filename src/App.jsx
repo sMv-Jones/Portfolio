@@ -17,7 +17,8 @@ export default function App() {
     useEffect(() => {
         const options = {
             root: null,
-            rootMargin: '-20% 0px -60% 0px', 
+            // Enhanced viewport balance checks to match the tightened section margins
+            rootMargin: '-30% 0px -50% 0px', 
             threshold: 0
         };
 
@@ -42,7 +43,8 @@ export default function App() {
         e.preventDefault();
         const element = sectionsRef.current[id];
         if (element) {
-            const offsetPosition = element.offsetTop - (window.innerWidth <= 1024 ? 70 : 40);
+            // Refined padding offset adjustments for accurate jump landings
+            const offsetPosition = element.offsetTop - (window.innerWidth <= 1024 ? 80 : 48);
             window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'
@@ -57,7 +59,6 @@ export default function App() {
 
     return (
         <div className="app-container">
-            {/* UPDATED: Removed the <Theme /> component from this container */}
             <div className="mobile-section-header">
                 <div className="mobile-header-content">
                     <h2 className="mobile-title">{formatTitle(activeSection)}</h2>

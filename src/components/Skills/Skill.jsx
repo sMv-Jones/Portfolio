@@ -10,7 +10,7 @@ function Skill() {
       name: "Meta Front-End Developer Professional Certificate",
       issuer: "Coursera",
       date: "2026",
-      status: "Verified",
+      status: "Verified", // Uses success theme color
       link: "#"
     },
     {
