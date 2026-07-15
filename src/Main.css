@@ -1,0 +1,201 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    min-height: 100vh;
+    padding: 1em;
+}
+
+:root,
+[data-theme="midnight"] {
+    --bg: #0B0F19;
+    --bg-secondary: #111625;
+
+    --surface: #171E30;
+    --surface-2: #222B44;
+    --surface-hover: #2E3A5B;
+
+    --text: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #64748B;
+
+    --primary: #6366F1;
+    --primary-hover: #4F46E5;
+    --secondary: #A855F7;
+    --accent: #F43F5E;
+
+    /* High-contrast neon pops for pitch black */
+    --success: #00FF66;
+    --warning: #FFB800;
+    --danger: #FF3366;
+    --info: #00E5FF;
+
+    --border: #24304A;
+    --border-light: #334466;
+
+    --shadow: rgba(0, 0, 0, .40);
+
+    --gradient-primary: linear-gradient(135deg, #6366F1, #A855F7);
+    --gradient-accent: linear-gradient(135deg, #6366F1, #F43F5E);
+}
+
+[data-theme="slate"] {
+    --bg: #0F172A;
+    --bg-secondary: #1E293B;
+
+    --surface: #334155;
+    --surface-2: #475569;
+    --surface-hover: #64748B;
+
+    --text: #F8FAFC;
+    --text-secondary: #E2E8F0;
+    --text-muted: #94A3B8;
+
+    --primary: #0EA5E9;
+    --primary-hover: #0284C7;
+    --secondary: #2DD4BF;
+    --accent: #38BDF8;
+
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+    --info: #38BDF8;
+
+    --border: #1E293B;
+    --border-light: #475569;
+
+    --shadow: rgba(0, 0, 0, .25);
+
+    --gradient-primary: linear-gradient(135deg, #0EA5E9, #2DD4BF);
+    --gradient-accent: linear-gradient(135deg, #0EA5E9, #38BDF8);
+}
+
+[data-theme="forest"] {
+    --bg: #060D0A;
+    --bg-secondary: #0C1A14;
+
+    --surface: #142C20;
+    --surface-2: #1E3F2F;
+    --surface-hover: #29543F;
+
+    --text: #F2FFF7;
+    --text-secondary: #A7D7BC;
+    --text-muted: #6B9E82;
+
+    --primary: #10B981;
+    --primary-hover: #059669;
+    --secondary: #84CC16;
+    --accent: #22C55E;
+
+    --success: #46EC90;
+    --warning: #F59E0B;
+    --danger: #FF4A6B;
+    --info: #06B6D4;
+
+    --border: #1B3B2B;
+    --border-light: #295740;
+
+    --shadow: rgba(0, 0, 0, .35);
+
+    --gradient-primary: linear-gradient(135deg, #10B981, #84CC16);
+    --gradient-accent: linear-gradient(135deg, #10B981, #22C55E);
+}
+
+[data-theme="light"] {
+    --bg: #FAFAFA;
+    --bg-secondary: rgb(217, 255, 255);
+
+    --surface: #FFFFFF;
+    --surface-2: #E4E4E7;
+    --surface-hover: #D4D4D8;
+
+    --text: #18181B;
+    --text-secondary: #3F3F46;
+    --text-muted: #71717A;
+
+    --primary: #0F766E;
+    --primary-hover: #003d39;
+    --secondary: #0891B2;
+    --accent: #16A34A;
+
+    --success: #115E59;
+    --warning: #9A3412;
+    --danger: #991B1B;
+    --info: #0369A1;
+
+    --border: #E4E4E7;
+    --border-light: #D4D4D8;
+
+    --shadow: rgba(0, 0, 0, .05);
+
+    --gradient-primary: linear-gradient(135deg, #0F766E, #0891B2);
+    --gradient-accent: linear-gradient(135deg, #0F766E, #16A34A);
+}
+
+[data-theme="nordic-light"] {
+    --bg: #F0F4F8;
+    --bg-secondary: #E2E8F0;
+
+    --surface: #FFFFFF;
+    --surface-2: #D9E2EC;
+    --surface-hover: #BCCCDC;
+
+    --text: #102A43;
+    --text-secondary: #334E68;
+    --text-muted: #627D98;
+
+    --primary: #243B53;
+    --primary-hover: #102A43;
+    --secondary: #3B82F6;
+    --accent: #48BB78;
+
+    --success: #1E4620;
+    --warning: #8C4303;
+    --danger: #9B1C1C;
+    --info: #0F4C81;
+
+    --border: #D9E2EC;
+    --border-light: #BCCCDC;
+
+    --shadow: rgba(36, 59, 83, .06);
+
+    --gradient-primary: linear-gradient(135deg, #71b0f4, #3B82F6);
+    --gradient-accent: linear-gradient(135deg, #243B53, #48BB78);
+}
+
+[data-theme="sand"] {
+    --bg: #FDFBF7;
+    --bg-secondary: #F4EFE6;
+
+    --surface: #FFFFFF;
+    --surface-2: #EFE9DC;
+    --surface-hover: #E5DCC9;
+
+    --text: #433422;
+    --text-secondary: #705E49;
+    --text-muted: #9C8A75;
+
+    --primary: #C2410C;
+    --primary-hover: #9A3412;
+    --secondary: #B45309;
+    --accent: #15803D;
+
+    --success: #064E3B;
+    --warning: #78350F;
+    --danger: #7F1D1D;
+    --info: #1E3A8A;
+
+    --border: #EFE9DC;
+    --border-light: #E5DCC9;
+
+    --shadow: rgba(67, 52, 34, .05);
+
+    --gradient-primary: linear-gradient(135deg, #C2410C, #B45309);
+    --gradient-accent: linear-gradient(135deg, #C2410C, #15803D);
+}

@@ -1,0 +1,19 @@
+a {
+    width: fit-content;
+    color: var(--primary);
+    text-decoration: none;
+
+}
+
+a:hover {
+    transition: all .4s ease;
+    color: var(--primary-hover);
+    text-decoration: underline;
+
+}
+
+body {
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+

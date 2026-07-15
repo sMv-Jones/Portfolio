@@ -1,0 +1,22 @@
+.hero-body {
+    color: var(--text);
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+    padding-top: 3em;
+}
+
+.hero-body * {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-body h1 {
+    font-size: 3em;
+}
+
+.hero-body p {
+    color: var(--text-secondary);
+}

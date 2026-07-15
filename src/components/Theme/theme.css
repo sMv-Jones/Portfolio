@@ -1,0 +1,121 @@
+.dropdown-container {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 260px;
+}
+
+.dropdown-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.dropdown-trigger:hover {
+    background: var(--surface-hover);
+    border-color: var(--border-light);
+}
+
+.dropdown-trigger:focus-visible {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--primary);
+}
+
+.trigger-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.chevron-icon {
+    color: var(--text-muted);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-trigger.is-open .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 1em);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    animation: slideDownDrop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: top center;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.dropdown-item:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+}
+
+.dropdown-item.is-active {
+    background: var(--surface-2);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.color-bar {
+    width: 70px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideDownDrop {
+    from {
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}

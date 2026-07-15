@@ -1,0 +1,26 @@
+.contact-section {
+    display: flex;
+    color: var(--text);
+    align-items: flex-start;
+}
+
+.contact-section hr {
+    color: var(--primary);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-links a {
+    width: fit-content;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.contact-links a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
