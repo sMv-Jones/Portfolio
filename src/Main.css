@@ -11,11 +11,11 @@ body {
     min-height: 100vh;
     padding: 1em;
 }
+
 :root,
 [data-theme="light"] {
     --bg: #FAFAFA;
-    --bg-secondary: #F0F9FF; /* Replaced harsh cyan rgb() with subtle cool slate/blue */
-
+    --bg-secondary: #F0F9FF;
     --surface: #FFFFFF;
     --surface-2: #F1F5F9;
     --surface-hover: #E2E8F0;
@@ -53,14 +53,12 @@ body {
 
     --text: #F8FAFC;
     --text-secondary: #CBD5E1;
-    --text-muted: #94A3B8; /* Elevated from #64748B for better dark-mode contrast */
-
+    --text-muted: #94A3B8;
     --primary: #6366F1;
     --primary-hover: #4F46E5;
     --secondary: #A855F7;
     --accent: #F43F5E;
 
-    /* Toned down neon buzz while keeping high vibrancy */
     --success: #22C55E;
     --warning: #F59E0B;
     --danger: #FF3366;
@@ -77,9 +75,9 @@ body {
 
 [data-theme="slate"] {
     --bg: #0F172A;
-    --bg-secondary: #1E293B;
+    --bg-secondary: #193664;
 
-    --surface: #1E293B; /* Adjusted surface layers to let text breathe */
+    --surface: #1E293B;
     --surface-2: #334155;
     --surface-hover: #475569;
 
@@ -116,8 +114,7 @@ body {
 
     --text: #F2FFF7;
     --text-secondary: #A7D7BC;
-    --text-muted: #7CAE93; /* Brightened slightly for readability */
-
+    --text-muted: #7CAE93;
     --primary: #10B981;
     --primary-hover: #059669;
     --secondary: #84CC16;
@@ -176,7 +173,7 @@ body {
     --surface-2: #EFE9DC;
     --surface-hover: #E5DCC9;
 
-    --text: #2C2216; /* Darkened text color for higher WCAG contrast */
+    --text: #2C2216;
     --text-secondary: #5A4A38;
     --text-muted: #85735E;
 

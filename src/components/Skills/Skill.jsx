@@ -4,7 +4,7 @@ function Skill() {
   const languages = ["JavaScript", "HTML5", "CSS3", "Python"];
   const mernStack = ["MongoDB", "Express.js", "React.js", "Node.js"];
   const coreSkills = ["Backend Development", "Frontend Development", "RESTful APIs", "State Management"];
-  const tools = ["Azure Cloud", "Vercel", "Render","Git & GitHub", "VS Code", "Postman"];
+  const tools = ["Azure Cloud", "Vercel", "Render", "Git & GitHub", "VS Code", "Postman"];
   
   const certifications = [
     {
@@ -27,11 +27,12 @@ function Skill() {
     <div className="skills-container">
       <div className="skills-header">
         <h2 className="section-title">My Toolbox & Credentials</h2>
-        <p className="section-subtitle">The languages, frameworks, and developer environments I use to build scaleable web applications.</p>
+        <p className="section-subtitle">
+          The languages, frameworks, and developer environments I use to build scalable web applications.
+        </p>
       </div>
       
       <div className="skills-grid">
-        
         <div className="skills-card">
           <h3 className="card-heading language-title">Languages</h3>
           <ul className="skills-list">
@@ -67,7 +68,6 @@ function Skill() {
             ))}
           </ul>
         </div>
-
       </div>
 
       <div className="certifications-section">

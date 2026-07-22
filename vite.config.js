@@ -13,7 +13,7 @@ export default defineConfig({
     {
       name: 'dynamic-prevent-fouc',
       transformIndexHtml(html) {
-        const cssPath = path.resolve(__dirname, 'src/main.css'); 
+        const cssPath = path.resolve(__dirname, 'src/main.css');
         let bgColors = {};
 
         try {

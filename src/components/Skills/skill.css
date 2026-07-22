@@ -1,212 +1,213 @@
 .skills-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: var(--text);
-    background-color: var(--bg);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  box-sizing: border-box;
 }
 
 .skills-header {
-    text-align: center;
-    margin-bottom: 3.5rem;
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
 }
 
 .skills-container .section-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    margin-bottom: 0.75rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-subtitle {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.5;
+  color: var(--text-secondary);
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
+
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.75rem;
-    margin-bottom: 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
 }
 
 .skills-card {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 1.75rem;
-    box-shadow: 0 10px 30px -10px var(--shadow);
-    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  box-shadow: 0 10px 30px -10px var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .skills-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-light);
-    background-color: var(--surface-hover);
+  transform: translateY(-2px);
+  border-color: var(--border-light);
+  background-color: var(--surface-hover);
 }
 
 .card-heading {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    position: relative;
-    padding-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .card-heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 40px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 40px;
 }
+
 .language-title::after { background: var(--secondary); }
 .mern-title::after { background: var(--gradient-primary); }
 .core-title::after { background: var(--gradient-accent); }
 .tool-title::after { background: var(--info); }
 
+
 .skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
 }
 
 .skill-badge {
-    padding: 0.45rem 0.85rem;
-    border-radius: 8px;
-    font-size: 0.88rem;
-    font-weight: 500;
-    background-color: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    transition: all 0.2s ease;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: clamp(0.8rem, 2vw, 0.88rem);
+  font-weight: 500;
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
 }
 
 .skill-badge:hover {
-    color: var(--text);
-    border-color: var(--primary);
-    background-color: var(--bg);
+  color: var(--text);
+  border-color: var(--primary);
+  background-color: var(--bg);
 }
 
-.skill-badge.lang {
-    border-left: 3px solid var(--secondary);
-}
+.skill-badge.lang { border-left: 3px solid var(--secondary); }
+.skill-badge.mern { border-left: 3px solid var(--primary); }
+.skill-badge.core { border-left: 3px solid var(--accent); }
+.skill-badge.tool { border-left: 3px solid var(--info); }
 
-.skill-badge.mern {
-    border-left: 3px solid var(--primary);
-}
-
-.skill-badge.core {
-    border-left: 3px solid var(--accent);
-}
-
-.skill-badge.tool {
-    border-left: 3px solid var(--info);
-}
 
 .cert-section-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 1.75rem;
-    color: var(--text);
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
 .cert-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
 }
 
 .cert-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.5rem 2rem;
-    gap: 1.5rem;
-    box-shadow: 0 4px 20px var(--shadow);
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: clamp(1.1rem, 3vw, 1.5rem) clamp(1.25rem, 3vw, 2rem);
+  gap: 1.25rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .cert-card:hover {
-    background-color: var(--surface-hover);
-    border-color: var(--border-light);
+  background-color: var(--surface-hover);
+  border-color: var(--border-light);
 }
 
 .cert-info h4 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--text);
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1rem, 3vw, 1.15rem);
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
 }
 
 .cert-meta {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-muted);
+  font-size: clamp(0.825rem, 2vw, 0.9rem);
 }
 
 .status-badge {
-    background-color: rgba(0, 255, 102, 0.1);
-    color: var(--success);
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid rgba(0, 255, 102, 0.2);
+  background-color: rgba(0, 255, 102, 0.1);
+  color: var(--success);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 255, 102, 0.2);
 }
 
 .verify-btn {
-    background: var(--gradient-primary);
-    color: var(--text);
-    text-decoration: none;
-    padding: 0.65rem 1.25rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  background: var(--gradient-primary);
+  color: #FFFFFF !important;
+  text-decoration: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px var(--shadow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .verify-btn:hover {
-    opacity: 0.95;
-    transform: translateY(-1px);
+  opacity: 0.95;
+  transform: translateY(-1px);
 }
 
 .verify-btn:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
+
 @media (max-width: 768px) {
-    .cert-card {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1.5rem;
-    }
-    
-    .verify-btn {
-        width: 100%;
-        text-align: center;
-    }
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .verify-btn {
+    width: 100%;
+  }
 }
